@@ -17,7 +17,7 @@ if (existsSync('config.env')) require('dotenv').config({
 process.env.NODE_OPTIONS = '--max_old_space_size=2560'
 const DB_URL = process.env.DATABASE_URL || '';
 module.exports = {
-	SESSION_ID: process.env.SESSION_ID || '',
+	SESSION_ID: process.env.SESSION_ID || 'RGNK-fgcJTgac',
 	HEROKU: {
 		API_KEY: process.env.HEROKU_API_KEY,
 		APP_NAME: process.env.HEROKU_APP_NAME
